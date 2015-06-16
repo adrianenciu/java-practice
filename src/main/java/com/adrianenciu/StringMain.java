@@ -43,12 +43,6 @@ public class StringMain {
             if (charCountMap.get(key) == null) {
                 charCountMap.put(key, 1);
             } else {
-                charCountMap.put(key, charCountMap.get(key) + 1);
-            }
-        }
-
-        for (Map.Entry<String, Integer> entry : charCountMap.entrySet()) {
-            if (entry.getValue() > 1) {
                 return false;
             }
         }
